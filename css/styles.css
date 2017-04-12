@@ -1,0 +1,501 @@
+#main-Div{
+    /*border: 5px solid;*/
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 30%;
+    opacity: 0.9;
+    border:double 15px #000000;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright:0px;
+-moz-border-radius-bottomleft:0px;
+-moz-border-radius-bottomright:0px;
+-webkit-border-top-left-radius:0px;
+-webkit-border-top-right-radius:0px;
+-webkit-border-bottom-left-radius:0px;
+-webkit-border-bottom-right-radius:0px;
+border-top-left-radius:0px;
+border-top-right-radius:0px;
+border-bottom-left-radius:0px;
+border-bottom-right-radius:0px;
+    -webkit-box-shadow: 0px 0px 90px 30px #918484; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: 0px 0px 90px 30px #918484; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+
+}
+
+#rotate{
+    width: 90px;
+    height: 90px;
+}
+
+#line{
+    position: fixed;
+    top: 150px;
+    left: 40px;
+}
+#line div{
+    border: 2px solid;
+    height: 50px;
+    width: 50px;
+      -webkit-box-shadow: 0px 0px 10px 0px #4cb2c4; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+          box-shadow: 0px 0px 10px 0px #4cb2c4; 
+}
+#up{
+    background-image: url("../images/110933-glowing-green-neon-icon-arrows-arrow-redirect-up.png");
+   background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+
+#reload_button{
+    position: fixed;
+    height: 50px;
+    width: 52px;
+    top:200px;
+    left: 50px;
+    opacity: 0.3;
+    border: 2px solid;
+    background-image: url("../images/refresh (1).png");
+    background-size: 40px 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 0px 18px 0px #4cb2c4; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: 0px 0px 18px 0px #4cb2c4; 
+}
+
+#down{
+     background-image: url("../images/110933-glowing-green-neon-icon-arrows-arrow-redirect-up.png");
+     background-size: 50px 50px;
+     background-repeat: no-repeat;
+    -webkit-transform: matrix(-1.000,0.000,-0.000,-1.000,0,0);
+    -moz-transform: matrix(-1.000,0.000,-0.000,-1.000,0px,0px);
+    -ms-transform: matrix(-1.000,0.000,-0.000,-1.000,0,0);
+    -o-transform: matrix(-1.000,0.000,-0.000,-1.000,0,0);
+    transform: matrix(-1.000,0.000,-0.000,-1.000,0,0);
+}
+#rotate-div img{
+    border-radius: 12px;
+}
+
+.div_up{
+    -webkit-transform: matrix(-1,0.000,-0.000,-1,0,0);
+-moz-transform: matrix(-1,0.000,-0.000,-1,0px,0px);
+-ms-transform: matrix(-1,0.000,-0.000,-1,0,0);
+-o-transform: matrix(-1,0.000,-0.000,-1,0,0);
+transform: matrix(-1,0.000,-0.000,-1,0,0);
+}
+
+.div_down{
+    -webkit-transform: matrix(1.000,0.00000,-0.00000,1.000,0,0);
+-moz-transform: matrix(1.000,0.0000,-0.0000,1.00000,0px,0px);
+-ms-transform: matrix(1.000,0.0000,-0.0000,1.000,0,0);
+-o-transform: matrix(1.000,0.0000,-0.0000,1.000,0,0);
+transform: matrix(1.000,0.0000,-0.0000,1.000,0,0);
+}
+
+#rotate-div{
+    position: fixed;
+    background-color: white;
+    left:  30px;
+    top: 30px;
+      -webkit-box-shadow: 0px 0px 20px 0px #fff; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+-webkit-transform: matrix(0.726,0.688,-0.688,0.726,0,0);
+-moz-transform: matrix(0.726,0.688,-0.688,0.726,0px,0px);
+-ms-transform: matrix(0.726,0.688,-0.688,0.726,0,0);
+-o-transform: matrix(0.726,0.688,-0.688,0.726,0,0);
+transform: matrix(0.726,0.688,-0.688,0.726,0,0);
+}
+body{
+    background-image: url("../images/chess1.jpg");
+    background-size: 1550px 790px;
+    background-repeat: no-repeat;
+    
+}
+
+#main-Div div div {
+    
+    background-position: 0px 0px;
+    border: 2.6px solid #fff;
+    padding-top: 30px;
+    background: #00;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 8px 0px #f5f0f0; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: 0px 0px 8px 0px #f5f0f0; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+
+}
+#a-1, #a-3, #a-5, #a-7, #b-2 ,#b-4, #b-6, #b-8, #c-1, #c-3, #c-5, #c-7, #d-2, #d-4, #d-6, #d-8 
+,#e-1, #e-3,#e-5, #e-7, #f-2,#f-4,#f-6, #f-8, #g-1, #g-3, #g-5,#g-7, #h-2, #h-4, #h-6, #h-8{
+     background-color:#f2e7bd;
+/*     #661018;*/
+}
+#a-2, #a-4, #a-6, #a-8, #b-1 ,#b-3, #b-5, #b-7, #c-2, #c-4, #c-6, #c-8, #d-1, #d-3, #d-5, #d-7 
+,#e-2, #e-4,#e-6, #e-8, #f-1,#f-3,#f-5, #f-7, #g-2, #g-4, #g-6,#g-8, #h-1, #h-3, #h-5, #h-7{
+   background-color: #33322f;
+}
+
+
+.main-div-rotaed-rigth{
+-webkit-transform: matrix(0.658,0.566,-1.205,0.577,16.669,19.953);
+-moz-transform: matrix(0.658,0.566,-1.205,0.577,16.669px,19.953px);
+-ms-transform: matrix(0.658,0.566,-1.205,0.577,16.669,19.953);
+-o-transform: matrix(0.658,0.566,-1.205,0.577,16.669,19.953);
+transform: matrix(0.658,0.566,-1.205,0.577,16.669,19.953);
+}
+
+.main-div-rotaed-left{
+    -webkit-transform: matrix(1.137,-0.117,0.660,0.783,0,0);
+-moz-transform: matrix(1.137,-0.117,0.660,0.783,0px,0px);
+-ms-transform: matrix(1.137,-0.117,0.660,0.783,0,0);
+-o-transform: matrix(1.137,-0.117,0.660,0.783,0,0);
+transform: matrix(1.137,-0.117,0.660,0.783,0,0);
+}
+
+.name{
+/*  background-color: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #ad0000);  Chrome 10-25, iOS 5+, Safari 5.1+ 
+  background-image:linear-gradient(to bottom, #000000, #ad0000);  Chrome 26, Firefox 16+, IE 10+, Opera */
+
+}
+#main-Div div div:hover {
+  -webkit-animation: myanim 8s infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: myanim 8s infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+.box_shadow{
+    -webkit-animation: boxAnimation 3s infinite;
+    -moz-animation: boxAnimation 3s infinite;
+    -o-animation: boxAnimation 3s infinite;
+    
+}
+
+@-webkit-keyframes boxAnimation {
+    0% {
+        -moz-box-shadow: 0px 0px 75px #0dffff;
+-webkit-box-shadow: 0px 0px 75px #0dffff;
+box-shadow: 0px 0px 75px #0dffff;
+    }
+    
+    25% {
+        -moz-box-shadow:inset 0px 0px 20px #0dffff;
+-webkit-box-shadow:inset 0px 0px 20px #0dffff;
+box-shadow:inset 0px 0px 20px #0dffff;
+    }
+    50% {
+        -moz-box-shadow:inset 0px 0px 32px #0dffff;
+-webkit-box-shadow:inset 0px 0px 32px #0dffff;
+box-shadow:inset 0px 0px 32px #0dffff;
+    }
+    75%{
+        -moz-box-shadow:inset 0px 0px 42px #0dffff;
+-webkit-box-shadow:inset 0px 0px 42px #0dffff;
+box-shadow:inset 0px 0px 42px #0dffff;
+    }
+    100% {
+        -moz-box-shadow:inset 0px 0px 51px #0dffff;
+-webkit-box-shadow:inset 0px 0px 51px #0dffff;
+box-shadow:inset 0px 0px 51px #0dffff;
+    }
+    
+}
+@keyframes boxAnimation {
+      0% {
+        -moz-box-shadow: 0px 0px 75px #0dffff;
+-webkit-box-shadow: 0px 0px 75px #0dffff;
+box-shadow: 0px 0px 75px #0dffff;
+    }
+    
+    25% {
+        -moz-box-shadow:inset 0px 0px 20px #0dffff;
+-webkit-box-shadow:inset 0px 0px 20px #0dffff;
+box-shadow:inset 0px 0px 20px #0dffff;
+    }
+    50% {
+        -moz-box-shadow:inset 0px 0px 32px #0dffff;
+-webkit-box-shadow:inset 0px 0px 32px #0dffff;
+box-shadow:inset 0px 0px 32px #0dffff;
+    }
+    75%{
+        -moz-box-shadow:inset 0px 0px 42px #0dffff;
+-webkit-box-shadow:inset 0px 0px 42px #0dffff;
+box-shadow:inset 0px 0px 42px #0dffff;
+    }
+    100% {
+        -moz-box-shadow:inset 0px 0px 51px #0dffff;
+-webkit-box-shadow:inset 0px 0px 51px #0dffff;
+box-shadow:inset 0px 0px 51px #0dffff;
+    }
+}
+
+@-webkit-keyframes myanim {
+  0%   { opacity: 0.0; }
+  50%  { opacity: 4.5; }
+  100% { opacity: 5.0; }
+}
+@keyframes myanim {
+  0%   { opacity: 0.0; }
+  50%  { opacity: 4.5; }
+  100% { opacity: 5.0; }
+}
+.selected {
+    height: 80px;
+    width: 90px;
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+    
+  }
+  .select_color{
+      background-color: rgba(0, 255, 0, 1);
+      background: rgba(0, 255, 0, 1);
+      color: rgba(0, 255, 0, 1);
+  }
+  
+  
+  #a-1.selected{
+        background-image: url("../images/Black Rook.G03.2k.png");
+       }
+  #a-2.selected{
+      background-image: url("../images/Knight Chess Piece.G03.2k (1).png");
+  }
+  #a-3.selected{
+     background-image: url("../images/Bishop Chess Piece.G03.2k.png");
+  }
+  #a-4.selected{
+     background-image: url("../images/Black Queen.G01.2k.png");
+  }
+  #a-5.selected{
+     background-image: url("../images/King Chess Piece.G14.2k.png");
+  }
+  #a-6.selected{
+      background-image: url("../images/Bishop Chess Piece.G03.2k.png");
+  }
+  #a-7.selected{
+     background-image: url("../images/Knight Chess Piece.G03.2k (1).png");
+  }
+  #a-8.selected{
+     background-image: url("../images/Black Rook.G03.2k.png");
+  }
+  #b-1.selected{
+      background-image: url("../images/Black Pawn.G03.2k.png");
+  }
+   #b-2.selected{
+     background-image: url("../images/Black Pawn.G03.2k.png");
+  }
+   #b-3.selected{
+      background-image: url("../images/Black Pawn.G03.2k.png");
+  }
+   #b-4.selected{
+      background-image: url("../images/Black Pawn.G03.2k.png");
+  }
+   #b-5.selected{
+      background-image: url("../images/Black Pawn.G03.2k.png");
+  } 
+  #b-6.selected{
+      background-image: url("../images/Black Pawn.G03.2k.png");
+  }
+   #b-7.selected{
+     background-image: url("../images/Black Pawn.G03.2k.png");
+  }
+   #b-8.selected{
+      background-image: url("../images/Black Pawn.G03.2k.png");
+  }
+   #g-1.selected{
+       background-image: url("../images/Chess Pieces.G05.2k.png");
+      
+  }
+  #g-2.selected{
+      background-image: url("../images/Chess Pieces.G05.2k.png");
+      
+  }
+  #g-3.selected{
+      background-image: url("../images/Chess Pieces.G05.2k.png");
+      
+  }
+  #g-4.selected{
+      background-image: url("../images/Chess Pieces.G05.2k.png");
+      
+  }
+  #g-5.selected{
+      background-image: url("../images/Chess Pieces.G05.2k.png");
+      
+  }
+  #g-6.selected{
+      background-image: url("../images/Chess Pieces.G05.2k.png");
+      
+  }
+  #g-7.selected{
+      background-image: url("../images/Chess Pieces.G05.2k.png");
+      
+  }
+  #g-8.selected{
+      background-image: url("../images/Chess Pieces.G05.2k.png");
+      
+  }
+  #h-1.selected{
+      background-image: url("../images/Rook Chess Piece.G03.2k.png");  
+    
+  }
+   #h-2.selected{
+     
+       background-image: url("../images/Knight Chess Piece.G03.2k.png");
+  }
+   #h-3.selected{
+      
+      background-image: url("../images/Chess Pieces.G07.2k.png");
+  }
+   #h-4.selected{
+        background-image: url("../images/Queen Chess Piece.G03.2k.png");
+      
+  }
+   #h-5.selected{
+      
+       background-image: url("../images/White King.G03.2k.png");
+  } 
+  #h-6.selected{
+       background-image: url("../images/Chess Pieces.G07.2k.png");
+     
+  }
+   #h-7.selected{
+        background-image: url("../images/Knight Chess Piece.G03.2k.png");
+      
+  }
+   #h-8.selected{
+      
+       background-image: url("../images/Rook Chess Piece.G03.2k.png");
+  }
+  .b_king{
+      height: 70px;
+    width: 70px;
+    background-image: url("../images/King Chess Piece.G14.2k.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+  }
+  .b_queen{
+      height: 70px;
+    width: 70px;
+    background-image: url("../images/Black Queen.G01.2k.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+  }
+  .b_rook{
+      height: 70px;
+    width: 70px;
+    background-image: url("../images/Black Rook.G03.2k.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+  }
+  .b_bishop{
+      height: 70px;
+    width: 70px;
+    background-image: url("../images/Bishop Chess Piece.G03.2k.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+  }
+  .b_knight{
+      height: 70px;
+    width: 70px;
+    background-image: url("../images/Knight Chess Piece.G03.2k (1).png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+  }
+  .b_pawn{
+      height: 70px;
+    width: 70px;
+    background-image: url("../images/Black Pawn.G03.2k.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+  }
+   .w_king{
+      height: 70px;
+    width: 70px;
+    background-image: url("../images/White King.G03.2k.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+  }
+  .w_queen{
+      height: 70px;
+    width: 70px;
+    background-image: url("../images/Queen Chess Piece.G03.2k.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+  }
+  .w_rook{
+      height: 70px;
+    width: 70px;
+    background-image: url("../images/Rook Chess Piece.G03.2k.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+  }
+  .w_bishop{
+      height: 70px;
+    width: 70px;
+    background-image: url("../images/Chess Pieces.G07.2k.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+  }
+  .w_knight{
+      height: 70px;
+    width: 70px;
+    background-image: url("../images/Knight Chess Piece.G03.2k.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+  }
+  .w_pawn{
+      height: 70px;
+    width: 70px;
+    background-image: url("../images/Chess Pieces.G05.2k.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+  }
+  
+  #white_score{
+      position: fixed;
+      top: 50%;
+      left: 1.5%;
+      height: 340px;
+      width: 240px;
+      border: white 2px solid;
+      background-color: green;
+  }
+
+  #white_score1{
+      height:170px;
+      /*width: 120px;*/
+      background-color: #4cb2c4;
+  }
+  
+  #black_score1{
+      height:170px;
+      /*width: 120px;*/
+      background-color: purple;
+  }
+  
+ #black_score{
+      position: fixed;
+      top: 50%;
+      left: 84%;
+      height: 340px;
+      width: 240px;
+      border: white 2px solid;
+      background-color: blue;
+  }  
+  
+/*  1 king.
+1 queen.
+2 rooks.
+2 bishops.
+2 knights.
+8 pawns.*/
